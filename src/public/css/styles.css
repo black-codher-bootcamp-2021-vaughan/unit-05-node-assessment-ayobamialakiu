@@ -1,0 +1,89 @@
+.logo {
+    width: 400px;
+    margin: 0 auto;
+    display: block;
+}
+
+.mr-2 {
+    margin: 10px;
+}
+
+mr-3 {
+    margin: 15px;
+}
+
+mr-4 {
+    margin: 20px;
+}
+
+mr-5 {
+    margin: 25px;
+}
+
+.bold {
+    font-weight: bolder;
+}
+
+.body { 
+    background-color: rgb(254, 255, 254);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+table {
+    width: 80%;
+    border: 1px solid #000;
+    border-collapse: collapse;
+    margin: 0 auto;
+    vertical-align: middle;
+    font-size: 17px
+}
+
+table:hover {
+cursor: pointer;
+}
+
+thead tr {
+    background-color: coral;
+ }
+
+ th,
+td {
+    width: 25%;
+    text-align: left;
+    vertical-align: middle;
+    border: 1px solid #000;
+    border-collapse: collapse;
+    padding: 0.3em;
+    caption-side: bottom;
+}
+
+tr:nth-child(odd) {
+    background-color: azure;
+}
+
+::selection {
+    background: #a2dd5f;
+    /* WebKit/Blink Browsers */
+}
+
+::-moz-selection {
+    background: #a2dd5f;
+    /* Gecko Browsers */
+}
+
+pre {
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    border-left: 3px solid #f2334c;
+    color: #666;
+    page-break-inside: avoid;
+    font-family: monospace;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 1.6em;
+    max-width: 100%;
+    overflow: auto;
+    padding: 1em 1.5em;
+    display: block;
+    word-wrap: break-word;
+}

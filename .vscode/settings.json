@@ -1,0 +1,13 @@
+{
+    "editor.bracketPairColorization.enabled": true,
+    "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+    "editor.codeLens": false,
+    "task.quickOpen.history": 2,
+    "terminal.integrated.shellIntegration.enabled": true,
+    "python.analysis.useLibraryCodeForTypes": false,
+    "editor.renderControlCharacters": false,
+    "prettier.withNodeModules": true,
+    "liveshare.showReadOnlyUsersInEditor": "whileFollowing",
+    "liveshare.shareExternalFiles": true,
+    "prettier.resolveGlobalModules": false
+}
