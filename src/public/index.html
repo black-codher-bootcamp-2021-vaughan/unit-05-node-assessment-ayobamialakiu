@@ -1,9 +1,197 @@
 <html>
   <head>
-    <title>Todo List API</title>
+     <title> Ayobami's Todo List API</title>
+     <link
+     rel="shortcut icon"
+            href="/content/images/favicon.ico"
+            type="image/x-icon"
+     />
+     <link rel="stylesheet" href="/content/css/styles.css"  type="text/css" />
   </head>
   <body>
-    <h1>Todo List API</h1>
-    <p>....</p>
+      <header>
+<a href="/">
+<img src="content/images/logo.png" alt="logo" class="logo" />
+</a>
+      </header>
+    <h1 style="text-align: center;">Todo List API</h1>
+    <br />
+    <table class="table">
+        <thead>
+            <tr style="background-color: rgb(229, 235, 231);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+            <td>Endpoint</td>
+            <td>Description</td>
+            <td>Request Body</td>
+            <td>Response Type</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <code>
+                        <span class="mr-3 bold">GET</span> /todos
+                    </code>
+                </td>
+                <td>
+                    <code>Return all todos.</code>
+                </td>
+                <td>
+                    <code>Null</code>
+                </td>
+                <td>
+                    <code>application/json</code>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        <span class="mr-3 bold">GET</span> /todos/:id
+                    </code>
+                </td>
+                <td>
+                    <code>
+                        Return a specific todo with the corresponding id
+                    </code>
+                </td>
+                <td>
+                    <code>Null</code>
+                </td>
+                <td>
+                    <code>
+                      application/json
+                    </code>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        <span class="mr-3 bold">GET</span> /todos/overdue
+                    </code>
+                </td>
+                <td>
+                    <code>
+                        Return a list of overdue todos or an empty list if
+                        there are no overdue todos. Todos can be filtered
+                        based on their due date attribute
+                    </code>
+                </td>
+                <td>
+                    <code>Null</code>
+                </td>
+                <td>
+                    <code>application/json</code>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        <span class="mr-3 bold">GET</span> /todos/completed
+                    </code>
+                </td>
+                <td>
+                    <code>
+                        Return a list of completed todos or an empty list,
+                        if no todos have been completed. Todos can be
+                        filtered based on their due date attribute.
+                    </code>
+                </td>
+                <td>
+                    <code>Null</code>
+                </td>
+                <td>
+                    <code>application/json</code>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        <span class="mr-3 bold">POST</span> /todos
+                    </code>
+                </td>
+                <td>
+                    <code>Add a new todo to the todo list</code>
+                </td>
+                <td>
+                  <pre><code>{"name":"...", "due":"..."}</code></pre>
+                </td>
+                <td>
+                    <code>
+                      application/json
+                    </code>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        <span class="mr-3 bold">PATCH</span>/todos/:id
+                    </code>
+                </td>
+                <td>
+                    <code>
+                        Edit the name and/or due date attributes of a todo.
+                    </code>
+                </td>
+                <td>
+                    <pre><code>{"name":"...", "due":"..."}</code></pre>
+                </td>
+                <td>
+                    <code>application/json</code>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        <span class="mr-3 bold">POST</span>
+                        /todos/:id/complete
+                    </code>
+                </td>
+                <td>
+                    <code>Update todo, set attribute complete to true</code>
+                </td>
+                <td>
+                    <code>Null</code>
+                </td>
+                <td>
+                    <code>application/json</code>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        <span class="mr-3 bold">POST</span> /todos/:id/undo
+                    </code>
+                </td>
+                <td>
+                    <code>
+                        Update todo, set attribute complete to false
+                    </code>
+                </td>
+                <td>
+                    <code>Null</code>
+                </td>
+                <td>
+                    <code>application/json</code>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        <span class="mr-3 bold">DELETE</span> /todos/:id
+                    </code>
+                </td>
+                <td>
+                    <code>Deletes a todo by id</code>
+                </td>
+                <td>
+                    <code>Null</code>
+                </td>
+                <td>
+                    <code>application/json</code>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
   </body>
-</html>
+</html>;
